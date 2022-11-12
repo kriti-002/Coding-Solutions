@@ -2,7 +2,7 @@ class Solution {
 public:
     int help(vector<int>&arr, vector<vector<int>>&dp, int idx, int target){
     if(idx==0){
-        if(target==0 and arr[idx]==0) return 2;
+        if(target==0 and arr[idx]==0) return 2; //pick as well as not pick
         if(target==0 or arr[idx]==target) return 1;
         return 0;
     }
