@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void help(vector<int>&freq, vector<int>&nums, vector<int>&per, vector<vector<int>>&res){
+    void help(vector<bool>&freq, vector<int>&nums, vector<int>&per, vector<vector<int>>&res){
         int n=nums.size(), p=per.size();
         if(p==n){
             res.push_back(per);
@@ -21,7 +21,7 @@ public:
         vector<vector<int>>res;
         vector<int>per;
         int n=nums.size();
-        vector<int>freq(n, 0);
+        vector<bool>freq(n, 0);
         help(freq, nums, per, res);
         return res;
     }
