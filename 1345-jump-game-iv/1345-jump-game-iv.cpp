@@ -8,7 +8,7 @@ public:
             mp[arr[i]].push_back(i);
         }
         queue<int>q;
-        vector<bool>vis(n);
+        vector<bool>vis(n, 0);
         q.push(0); vis[0]=1;
         int res=0;
         while(!q.empty()){
