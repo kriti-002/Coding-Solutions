@@ -1,10 +1,9 @@
 class Trie{
   public:
-  Trie *child[26];
+  Trie *child[26]={NULL};
   bool isEnd;
     Trie(){
         isEnd=false;
-        memset(child, 0, sizeof(child));
     }
 };
 class WordDictionary {
