@@ -11,7 +11,10 @@ public:
             char ch= st.top(); st.pop();
             res+=ch;
         }
-        reverse(res.begin(), res.end());
+        if(res != ""){
+            reverse(res.begin(), res.end());
+            return res;
+        }
         return res;
     }
 };
