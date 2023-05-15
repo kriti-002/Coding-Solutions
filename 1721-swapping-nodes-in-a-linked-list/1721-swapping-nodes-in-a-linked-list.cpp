@@ -14,14 +14,12 @@ public:
         ListNode* p=head, *q=head, *r=head;
         int count=1;
         while(r){
-            if(count< k){
-                p=p->next;
-            }else if(count > k){
-                q=q->next;
-            }
             r=r->next;
             count++;
         }
+        for(int i=1; i<k; i++) p=p->next;
+        for(int i=1; i<count-k; i++) q=q->next;
+        
         int tmp=p->val;
         p->val=q->val;
         q->val=tmp;
