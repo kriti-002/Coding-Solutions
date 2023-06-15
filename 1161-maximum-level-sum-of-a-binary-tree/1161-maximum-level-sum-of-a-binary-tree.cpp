@@ -21,7 +21,7 @@ public:
         while(!q.empty()){
             level++;
             int tmp=0, size=q.size();
-            for(int i=size; i>0; --i){
+            while(size--){
                 auto x= q.front(); q.pop();
                 tmp+=x->val;
                 if(x->left) q.push(x->left);
