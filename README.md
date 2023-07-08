@@ -1,2 +1,2 @@
-# LeetCode-Solutions
-Collection of LeetCode questions.
+# LeetCode and GeeksForGeeks-Solutions
+Collection of LeetCode and GFG questions.
