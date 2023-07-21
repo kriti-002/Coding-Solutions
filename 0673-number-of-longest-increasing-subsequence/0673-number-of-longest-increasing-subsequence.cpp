@@ -1,28 +1,4 @@
-class Solution {
-    /*vector<vector<int>>dp;
-    int help(int i, int p,vector<int>& nums, vector<vector<int>>&dp){
-        if(i==nums.size()) return 0;
-        
-        if(dp[i][p+1]!=-1) return dp[i][p+1];
-        int len= help(i+1, p, nums, dp);
-        if(p== -1 or nums[p] < nums[i]) 
-            len=max(len,1+ help(i+1,i,nums,dp));
-        
-        return dp[i][p+1]= len;
-    }
-    int length(vector<int>& nums) {
-        int n=nums.size();
-        dp.resize(n+1, vector<int>(n+1,-1));
-        return help(0,-1,nums,dp);
-    }
-    int l= length(nums), res=0;
-        for(int i=0; i<dp.size(); i++){
-            for(int j=0; j<dp[0].size(); j++){
-                cout<<dp[i][j]<<" ";
-            }
-            cout<<"\n";
-        }
-        return res;*/
+class Solution{
 public:
     int findNumberOfLIS(vector<int>& nums) {
         
