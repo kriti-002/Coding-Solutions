@@ -51,7 +51,6 @@ class Solution
             q=q->next;
         }
         return head;
-        
     }
 };
 
