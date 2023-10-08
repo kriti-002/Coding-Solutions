@@ -4,12 +4,11 @@ class Solution {
         if(i >=n1 or j>=n2) return 0;
         if(dp[i][j]!=-1) return dp[i][j];
         
-        int maxi= INT_MIN;
+        int maxi= 0;
         int pickBoth= nums1[i]*nums2[j] + help(i+1, j+1, dp, nums1, nums2);
         int pickNums1= help(i+1, j, dp, nums1, nums2);
         int pickNums2= help(i,j+1, dp, nums1, nums2);
-        int notPickAny= help(i+1, j+1, dp, nums1, nums2);
-        return dp[i][j]= max({maxi,notPickAny, pickBoth, pickNums1, pickNums2});
+        return dp[i][j]= max({maxi, pickBoth, pickNums1, pickNums2});
     }
 public:
     int maxDotProduct(vector<int>& nums1, vector<int>& nums2) {
