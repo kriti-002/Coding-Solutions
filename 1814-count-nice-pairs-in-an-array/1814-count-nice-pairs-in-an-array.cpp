@@ -15,7 +15,7 @@ public:
         int count=0;
         for(int i=0; i<nums.size(); i++){
             int key= nums[i]- rev(nums[i]);
-            if(mp.count(key)){
+            if(mp.find(key)!= mp.end()){
                 count+=mp[key];
                 count%=mod;
             }
